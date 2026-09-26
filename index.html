@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratham Parmar | Cyberfolio</title>
+    <link rel="stylesheet" href="style.css?v=4.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Background Effects -->
+    <div class="bg-effects">
+        <canvas id="matrixCanvas"></canvas>
+        <div class="grid-overlay"></div>
+        <div class="bg-glow glow-1"></div>
+        <div class="bg-glow glow-2"></div>
+        <div class="bg-glow glow-3"></div>
+        <div class="bg-glow glow-4"></div>
+        <div class="bg-glow glow-5"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="logo">P<span>.</span>P</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#tryhackme-showcase">Badges</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#ai-stack">AI Stack</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <!-- Cyber Watcher Eyes Follower Widget -->
+        <div class="nav-eyes-wrapper" id="navEyes" title="Cyber Watcher: Tracking Cursor">
+            <div class="cyber-eye" id="leftEye">
+                <div class="pupil" id="leftPupil">
+                    <div class="pupil-glint"></div>
+                </div>
+            </div>
+            <div class="cyber-eye" id="rightEye">
+                <div class="pupil" id="rightPupil">
+                    <div class="pupil-glint"></div>
+                </div>
+            </div>
+            <span class="eyes-status-dot"></span>
+        </div>
+
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-wrapper">
+            <div class="hero-image">
+                <div class="profile-img-container">
+                    <img src="profile.jpg" alt="Pratham Parmar">
+                    <div class="online-badge">ONLINE</div>
+                </div>
+            </div>
+            <div class="hero-content">
+                <h2 class="greeting">Hello, I'm</h2>
+                <h1 class="title">Pratham Parmar</h1>
+                <h3 class="role-text">I'm a <span class="typing role-highlight"></span></h3>
+                <p class="hero-desc">
+                    Breaking systems ethically to build unbreakable security solutions.<br>
+                    Computer Engineering Student at GEC Palanpur.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary"><i class="fas fa-shield-check"></i> Contact Me</a>
+                    <a href="#projects" class="btn btn-outline-green"><i class="fas fa-arrow-right"></i> View My Work</a>
+                    <a href="#about" class="btn btn-outline-gray"><i class="fas fa-file-alt"></i> View Resume</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <h2 class="section-title">About <span>Me</span></h2>
+        <div class="about-wrapper">
+            <!-- Image Card with Cyber HUD -->
+            <div class="about-image-card glass-card">
+                <div class="cyber-corner top-left"></div>
+                <div class="cyber-corner top-right"></div>
+                <div class="cyber-corner bottom-left"></div>
+                <div class="cyber-corner bottom-right"></div>
+                <div class="hud-status-badge">
+                    <span class="hud-pulse"></span>
+                    <span>CYBER_SEC // ACTIVE</span>
+                </div>
+                <div class="about-img-wrap">
+                    <img src="about-image.jpg" alt="Pratham in Forensics Lab" class="about-img">
+                    <div class="about-scanlines"></div>
+                </div>
+            </div>
+
+            <!-- Content Area -->
+            <div class="about-content">
+                <div class="about-text glass-card">
+                    <div class="about-card-header">
+                        <div class="terminal-dots">
+                            <span class="dot dot-red"></span>
+                            <span class="dot dot-yellow"></span>
+                            <span class="dot dot-green"></span>
+                        </div>
+                        <span class="terminal-title"><i class="fas fa-user-shield"></i> BIO_PROFILE.exe</span>
+                    </div>
+                    <p>Cybersecurity enthusiast and Computer Engineering student at <strong>Government Engineering College, Palanpur</strong> with hands-on practical experience in ethical hacking and penetration testing. Proficient with <span class="cyber-pill-inline"><i class="fab fa-linux"></i> Kali Linux</span>, network vulnerability assessment, and offensive security methodologies.</p>
+                    <p>Demonstrated expertise through active labs on <span class="cyber-pill-inline"><i class="fas fa-shield-alt"></i> TryHackMe (Top 10%)</span>, dedicated to continuous learning in threat detection, digital forensics investigation, and resilient security architecture.</p>
+                </div>
+
+                <div class="stats-container">
+                    <!-- Stat 1 -->
+                    <div class="stat-box glass-card">
+                        <div class="stat-icon-wrapper">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3 class="stat-number"><span class="counter" data-target="8.63" data-decimals="2">8.63</span></h3>
+                            <p class="stat-label">Academic CGPA</p>
+                        </div>
+                        <div class="stat-glow-bar"></div>
+                    </div>
+
+                    <!-- Stat 2 -->
+                    <div class="stat-box glass-card">
+                        <div class="stat-icon-wrapper">
+                            <i class="fas fa-fire"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3 class="stat-number">Top 10%</h3>
+                            <p class="stat-label">TryHackMe Global</p>
+                        </div>
+                        <div class="stat-glow-bar"></div>
+                    </div>
+
+                    <!-- Stat 3 -->
+                    <div class="stat-box glass-card">
+                        <div class="stat-icon-wrapper">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3 class="stat-number"><span class="counter" data-target="3">3</span>+</h3>
+                            <p class="stat-label">Major Projects</p>
+                        </div>
+                        <div class="stat-glow-bar"></div>
+                    </div>
+
+                    <!-- Stat 4 -->
+                    <div class="stat-box glass-card">
+                        <div class="stat-icon-wrapper">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3 class="stat-number"><span class="counter" data-target="5">5</span>+</h3>
+                            <p class="stat-label">Industry Certs</p>
+                        </div>
+                        <div class="stat-glow-bar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TryHackMe Showcase & Badges -->
+    <section id="tryhackme-showcase" class="section thm-section">
+        <div class="thm-header-wrapper">
+            <h2 class="section-title">TryHackMe <span>Badges & Achievements</span></h2>
+            <p class="section-subtitle">Hands-on labs, real-world cyber defense challenges, and milestone badges earned on the TryHackMe platform.</p>
+        </div>
+
+        <div class="thm-profile-card-container">
+            <a href="https://tryhackme.com/p/parmarpratham44" target="_blank" class="thm-badge-link">
+                <img src="https://tryhackme-badges.s3.amazonaws.com/parmarpratham44.png" alt="TryHackMe Profile Badge" class="thm-main-badge-img">
+                <div class="thm-badge-cta">
+                    <span><i class="fas fa-external-link-alt"></i> View Live THM Profile</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="thm-badges-grid">
+            <!-- Badge 1 -->
+            <div class="thm-badge-card glass-card">
+                <div class="thm-badge-icon-wrapper">
+                    <img src="thm-badges/cat_linux.png" alt="cat linux.txt badge">
+                </div>
+                <div class="thm-badge-info">
+                    <div class="thm-badge-header">
+                        <h4>cat linux.txt</h4>
+                        <span class="badge-rarity common">51.2%</span>
+                    </div>
+                    <p>Being competent in Linux</p>
+                </div>
+            </div>
+
+            <!-- Badge 2 -->
+            <div class="thm-badge-card glass-card">
+                <div class="thm-badge-icon-wrapper">
+                    <img src="thm-badges/first_four.png" alt="First Four badge">
+                </div>
+                <div class="thm-badge-info">
+                    <div class="thm-badge-header">
+                        <h4>First Four</h4>
+                        <span class="badge-rarity common">30.4%</span>
+                    </div>
+                    <p>Completing four rooms in your first week of joining!</p>
+                </div>
+            </div>
+
+            <!-- Badge 3 -->
+            <div class="thm-badge-card glass-card">
+                <div class="thm-badge-icon-wrapper">
+                    <img src="thm-badges/7_day_streak.png" alt="7 Day Streak badge">
+                </div>
+                <div class="thm-badge-info">
+                    <div class="thm-badge-header">
+                        <h4>7 Day Streak</h4>
+                        <span class="badge-rarity common">26.1%</span>
+                    </div>
+                    <p>Achieving a 7 day hacking streak</p>
+                </div>
+            </div>
+
+            <!-- Badge 4 -->
+            <div class="thm-badge-card glass-card">
+                <div class="thm-badge-icon-wrapper">
+                    <img src="thm-badges/3_day_streak.png" alt="3 Day Streak badge">
+                </div>
+                <div class="thm-badge-info">
+                    <div class="thm-badge-header">
+                        <h4>3 Day Streak</h4>
+                        <span class="badge-rarity common">15.4%</span>
+                    </div>
+                    <p>Achieving a 3 day hacking streak</p>
+                </div>
+            </div>
+
+            <!-- Badge 5 -->
+            <div class="thm-badge-card glass-card">
+                <div class="thm-badge-icon-wrapper">
+                    <img src="thm-badges/networking_nerd.png" alt="Networking Nerd badge">
+                </div>
+                <div class="thm-badge-info">
+                    <div class="thm-badge-header">
+                        <h4>Networking Nerd</h4>
+                        <span class="badge-rarity common">23.8%</span>
+                    </div>
+                    <p>Completing the 'Network Fundamentals' module</p>
+                </div>
+            </div>
+
+            <!-- Badge 6 -->
+            <div class="thm-badge-card glass-card">
+                <div class="thm-badge-icon-wrapper">
+                    <img src="thm-badges/webbed.png" alt="Webbed badge">
+                </div>
+                <div class="thm-badge-info">
+                    <div class="thm-badge-header">
+                        <h4>Webbed</h4>
+                        <span class="badge-rarity common">31.8%</span>
+                    </div>
+                    <p>Understands how the world wide web works</p>
+                </div>
+            </div>
+
+            <!-- Badge 7 (Rare) -->
+            <div class="thm-badge-card glass-card rare-badge">
+                <div class="thm-badge-icon-wrapper">
+                    <img src="thm-badges/30_day_streak.png" alt="30 Day Streak badge">
+                </div>
+                <div class="thm-badge-info">
+                    <div class="thm-badge-header">
+                        <h4>30 Day Streak</h4>
+                        <span class="badge-rarity rare">Rare: 9.3%</span>
+                    </div>
+                    <p>Hacking for 30 days solid</p>
+                </div>
+            </div>
+
+            <!-- Badge 8 -->
+            <div class="thm-badge-card glass-card">
+                <div class="thm-badge-icon-wrapper">
+                    <img src="thm-badges/world_wide_web.png" alt="World Wide Web badge">
+                </div>
+                <div class="thm-badge-info">
+                    <div class="thm-badge-header">
+                        <h4>World Wide Web</h4>
+                        <span class="badge-rarity common">25.8%</span>
+                    </div>
+                    <p>Completing the 'How The Web Works' module</p>
+                </div>
+            </div>
+
+            <!-- Badge 9 (Rare) -->
+            <div class="thm-badge-card glass-card rare-badge">
+                <div class="thm-badge-icon-wrapper">
+                    <img src="thm-badges/raffle_royalty.png" alt="Raffle Royalty badge">
+                </div>
+                <div class="thm-badge-info">
+                    <div class="thm-badge-header">
+                        <h4>Raffle Royalty</h4>
+                        <span class="badge-rarity rare">Rare: 2.6%</span>
+                    </div>
+                    <p>Participating in Hack2Win 2025!</p>
+                </div>
+            </div>
+
+            <!-- Badge 10 -->
+            <div class="thm-badge-card glass-card">
+                <div class="thm-badge-icon-wrapper">
+                    <img src="thm-badges/pentesting_principles.png" alt="Pentesting Principles badge">
+                </div>
+                <div class="thm-badge-info">
+                    <div class="thm-badge-header">
+                        <h4>Pentesting Principles</h4>
+                        <span class="badge-rarity common">18.2%</span>
+                    </div>
+                    <p>Completing the 'Introduction to Pentesting' module</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <h2 class="section-title">My <span>Skills</span></h2>
+        <div class="skills-container">
+            <div class="skills-bars glass-card">
+                <div class="skills-card-header">
+                    <div class="skills-header-icon"><i class="fas fa-chart-line"></i></div>
+                    <div>
+                        <h3>Core Competencies</h3>
+                        <p class="skills-header-subtitle">Domain Mastery & Focus</p>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-info">
+                        <span><i class="fas fa-shield-alt" style="color: var(--primary-color); margin-right: 8px;"></i>Ethical Hacking</span>
+                        <span>88%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-fill" style="width: 88%;"></div></div>
+                </div>
+                <div class="skill">
+                    <div class="skill-info">
+                        <span><i class="fas fa-network-wired" style="color: var(--primary-color); margin-right: 8px;"></i>Network Reconnaissance</span>
+                        <span>82%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-fill" style="width: 82%;"></div></div>
+                </div>
+                <div class="skill">
+                    <div class="skill-info">
+                        <span><i class="fab fa-python" style="color: var(--primary-color); margin-right: 8px;"></i>Python Scripting</span>
+                        <span>74%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-fill" style="width: 74%;"></div></div>
+                </div>
+                <div class="skill">
+                    <div class="skill-info">
+                        <span><i class="fas fa-user-secret" style="color: var(--primary-color); margin-right: 8px;"></i>Penetration Testing</span>
+                        <span>72%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-fill" style="width: 72%;"></div></div>
+                </div>
+                <div class="skill">
+                    <div class="skill-info">
+                        <span><i class="fas fa-laptop-code" style="color: var(--primary-color); margin-right: 8px;"></i>Web Dev (HTML/CSS/React)</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-fill" style="width: 70%;"></div></div>
+                </div>
+                <div class="skill">
+                    <div class="skill-info">
+                        <span><i class="fas fa-code" style="color: var(--primary-color); margin-right: 8px;"></i>C Language</span>
+                        <span>65%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-fill" style="width: 65%;"></div></div>
+                </div>
+            </div>
+
+            <div class="skills-categories glass-card">
+                <div class="skills-card-header">
+                    <div class="skills-header-icon"><i class="fas fa-microchip"></i></div>
+                    <div>
+                        <h3>Technical Proficiency</h3>
+                        <p class="skills-header-subtitle">Technologies, Tools & Frameworks</p>
+                    </div>
+                </div>
+
+                <!-- Category 1: Security & Pentesting -->
+                <div class="tech-category-group">
+                    <div class="tech-group-title">
+                        <i class="fas fa-shield-halved"></i>
+                        <span>Security & Pentesting</span>
+                    </div>
+                    <div class="tech-pills-wrap">
+                        <span class="tech-pill"><i class="fab fa-linux"></i> Kali Linux</span>
+                        <span class="tech-pill"><i class="fas fa-network-wired"></i> Wireshark</span>
+                        <span class="tech-pill"><i class="fas fa-satellite-dish"></i> Nmap</span>
+                        <span class="tech-pill"><i class="fas fa-bug"></i> Burp Suite</span>
+                        <span class="tech-pill"><i class="fas fa-crosshairs"></i> Metasploit</span>
+                    </div>
+                </div>
+
+                <!-- Category 2: Programming & Scripting -->
+                <div class="tech-category-group">
+                    <div class="tech-group-title">
+                        <i class="fas fa-code"></i>
+                        <span>Programming & Scripting</span>
+                    </div>
+                    <div class="tech-pills-wrap">
+                        <span class="tech-pill"><i class="fab fa-python"></i> Python</span>
+                        <span class="tech-pill"><i class="fas fa-code"></i> C / C++</span>
+                        <span class="tech-pill"><i class="fab fa-js"></i> JavaScript</span>
+                        <span class="tech-pill"><i class="fab fa-php"></i> PHP</span>
+                        <span class="tech-pill"><i class="fas fa-database"></i> SQL</span>
+                        <span class="tech-pill"><i class="fab fa-java"></i> Java</span>
+                    </div>
+                </div>
+
+                <!-- Category 3: Web Technologies -->
+                <div class="tech-category-group">
+                    <div class="tech-group-title">
+                        <i class="fas fa-globe"></i>
+                        <span>Web & Frameworks</span>
+                    </div>
+                    <div class="tech-pills-wrap">
+                        <span class="tech-pill"><i class="fab fa-react"></i> React</span>
+                        <span class="tech-pill"><i class="fab fa-node-js"></i> Node.js</span>
+                        <span class="tech-pill"><i class="fab fa-html5"></i> HTML5</span>
+                        <span class="tech-pill"><i class="fab fa-css3-alt"></i> CSS3</span>
+                        <span class="tech-pill"><i class="fab fa-angular"></i> Angular</span>
+                        <span class="tech-pill"><i class="fas fa-server"></i> REST APIs</span>
+                    </div>
+                </div>
+
+                <!-- Category 4: Tools & Infrastructure -->
+                <div class="tech-category-group">
+                    <div class="tech-group-title">
+                        <i class="fas fa-toolbox"></i>
+                        <span>Tools & Environments</span>
+                    </div>
+                    <div class="tech-pills-wrap">
+                        <span class="tech-pill"><i class="fab fa-git-alt"></i> Git</span>
+                        <span class="tech-pill"><i class="fab fa-github"></i> GitHub</span>
+                        <span class="tech-pill"><i class="fas fa-terminal"></i> VS Code</span>
+                        <span class="tech-pill"><i class="fas fa-database"></i> MySQL</span>
+                        <span class="tech-pill"><i class="fab fa-ubuntu"></i> Ubuntu / Linux</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Development Stack Section -->
+    <section id="ai-stack" class="section">
+        <h2 class="section-title">AI Development <span>Stack</span></h2>
+        <p class="section-subtitle">I embrace the evolving AI-native development workflow — using intelligent tools to amplify engineering, not replace it.</p>
+
+        <div class="ai-stack-container">
+            <!-- Terminal-style intro card -->
+            <div class="ai-stack-intro glass-card">
+                <div class="about-card-header">
+                    <div class="terminal-dots">
+                        <span class="dot dot-red"></span>
+                        <span class="dot dot-yellow"></span>
+                        <span class="dot dot-green"></span>
+                    </div>
+                    <span class="terminal-title"><i class="fas fa-brain"></i> AI_WORKFLOW.config</span>
+                </div>
+                <p class="ai-stack-philosophy">
+                    These tools are part of my workflow — <strong>not a replacement for engineering fundamentals</strong>. I use them alongside software architecture, Git, testing, debugging, and problem-solving to <span class="cyber-pill-inline"><i class="fas fa-rocket"></i> build better software faster</span>.
+                </p>
+            </div>
+
+            <!-- Tool Cards Grid -->
+            <div class="ai-tools-grid">
+                <!-- Claude Code -->
+                <div class="ai-tool-card glass-card">
+                    <div class="ai-tool-icon-wrapper">
+                        <i class="fas fa-terminal"></i>
+                    </div>
+                    <div class="ai-tool-info">
+                        <h3 class="ai-tool-name">Claude Code</h3>
+                        <p class="ai-tool-desc">AI-assisted coding, refactoring, debugging, and working across codebases with deep contextual understanding.</p>
+                        <div class="ai-tool-tags">
+                            <span class="ai-tag"><i class="fas fa-code"></i> Coding</span>
+                            <span class="ai-tag"><i class="fas fa-wrench"></i> Refactoring</span>
+                            <span class="ai-tag"><i class="fas fa-bug"></i> Debugging</span>
+                            <span class="ai-tag"><i class="fas fa-sitemap"></i> Cross-Codebase</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Antigravity IDE -->
+                <div class="ai-tool-card glass-card">
+                    <div class="ai-tool-icon-wrapper">
+                        <i class="fas fa-atom"></i>
+                    </div>
+                    <div class="ai-tool-info">
+                        <h3 class="ai-tool-name">Antigravity IDE</h3>
+                        <p class="ai-tool-desc">An AI-powered development environment for building and experimenting with modern applications at speed.</p>
+                        <div class="ai-tool-tags">
+                            <span class="ai-tag"><i class="fas fa-flask"></i> Experimenting</span>
+                            <span class="ai-tag"><i class="fas fa-cube"></i> Building</span>
+                            <span class="ai-tag"><i class="fas fa-bolt"></i> AI-Powered</span>
+                            <span class="ai-tag"><i class="fas fa-layer-group"></i> Modern Apps</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Engineering fundamentals bar -->
+            <div class="ai-fundamentals-bar glass-card">
+                <div class="ai-fundamentals-title">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Built on Engineering Fundamentals</span>
+                </div>
+                <div class="ai-fundamentals-pills">
+                    <span class="tech-pill"><i class="fas fa-project-diagram"></i> Software Architecture</span>
+                    <span class="tech-pill"><i class="fab fa-git-alt"></i> Git</span>
+                    <span class="tech-pill"><i class="fas fa-vial"></i> Testing</span>
+                    <span class="tech-pill"><i class="fas fa-bug"></i> Debugging</span>
+                    <span class="tech-pill"><i class="fas fa-puzzle-piece"></i> Problem-Solving</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section">
+        <h2 class="section-title">Experience & <span>Education</span></h2>
+        <div class="resume-container">
+            
+            <!-- Experience Timeline -->
+            <div class="resume-card glass-card">
+                <div class="resume-header">
+                    <div class="resume-icon"><i class="fas fa-briefcase"></i></div>
+                    <div>
+                        <h3>Experience</h3>
+                        <p class="resume-subtitle">Professional Journey</p>
+                    </div>
+                </div>
+                
+                <div class="modern-timeline">
+                    <!-- Item 1 -->
+                    <div class="modern-timeline-item">
+                        <div class="timeline-node"></div>
+                        <div class="timeline-logo">
+                            <i class="fas fa-shield-alt" style="color: #111; font-size: 1.5rem;"></i>
+                        </div>
+                        <div class="timeline-content-modern">
+                            <h4 class="timeline-title-modern">Cybersecurity Intern</h4>
+                            <div class="timeline-date-pill">Dec 2025 &ndash; Jan 2026</div>
+                            <p class="timeline-institution">CyberWarLab (Virtual)</p>
+                            <p class="timeline-desc">Gained hands-on experience in vulnerability assessment, defensive security practices, risk analysis, and real-world cybersecurity operations.</p>
+                            <a href="https://drive.google.com/file/d/13hGwMxBr2OW-q9qN2I2d1C0S8o-69Ir3/view?usp=sharing" target="_blank" class="timeline-cert-btn">
+                                <i class="fas fa-certificate"></i>
+                                <span>View Certificate</span>
+                                <i class="fas fa-arrow-up-right-from-square cert-arrow-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 2 -->
+                    <div class="modern-timeline-item">
+                        <div class="timeline-node"></div>
+                        <div class="timeline-logo">
+                            <i class="fas fa-laptop-code" style="color: #111; font-size: 1.5rem;"></i>
+                        </div>
+                        <div class="timeline-content-modern">
+                            <h4 class="timeline-title-modern">Jr. Software Developer (Intern)</h4>
+                            <div class="timeline-date-pill">Jul 2026</div>
+                            <p class="timeline-institution">Samudra Technologies Pvt. Ltd.</p>
+                            <p class="timeline-desc">Contributed to software development projects in a professional engineering environment, applying technical skills and collaborating within a team.</p>
+                            <a href="https://drive.google.com/file/d/1VdK4Lc-v5UC66c5UmR-J26Ne95kZIhFv/view?usp=sharing" target="_blank" class="timeline-cert-btn">
+                                <i class="fas fa-certificate"></i>
+                                <span>View Certificate</span>
+                                <i class="fas fa-arrow-up-right-from-square cert-arrow-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education Timeline -->
+            <div class="resume-card glass-card">
+                <div class="resume-header">
+                    <div class="resume-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <div>
+                        <h3>Education</h3>
+                        <p class="resume-subtitle">Academic Journey</p>
+                    </div>
+                </div>
+                
+                <div class="modern-timeline">
+                    <!-- Item 1 -->
+                    <div class="modern-timeline-item">
+                        <div class="timeline-node"></div>
+                        <div class="timeline-logo">
+                            <i class="fas fa-university" style="color: #111; font-size: 1.5rem;"></i>
+                        </div>
+                        <div class="timeline-content-modern">
+                            <h4 class="timeline-title-modern">B.E. Computer Engineering</h4>
+                            <div class="timeline-date-pill">2023 &ndash; Present</div>
+                            <p class="timeline-institution">Government Engineering College, Palanpur</p>
+                            <div class="timeline-score-badge">
+                                <i class="fas fa-award"></i>
+                                <span>CGPA: <strong>8.63</strong></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 2 -->
+                    <div class="modern-timeline-item">
+                        <div class="timeline-node"></div>
+                        <div class="timeline-logo">
+                            <i class="fas fa-school" style="color: #111; font-size: 1.5rem;"></i>
+                        </div>
+                        <div class="timeline-content-modern">
+                            <h4 class="timeline-title-modern">Higher Secondary (Std 12)</h4>
+                            <div class="timeline-date-pill">2021 &ndash; 2023</div>
+                            <p class="timeline-institution">Swastik Higher Secondary School</p>
+                            <div class="timeline-score-badge">
+                                <i class="fas fa-chart-line"></i>
+                                <span>Percentage: <strong>64.00%</strong></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="modern-timeline-item">
+                        <div class="timeline-node"></div>
+                        <div class="timeline-logo">
+                            <i class="fas fa-book" style="color: #111; font-size: 1.5rem;"></i>
+                        </div>
+                        <div class="timeline-content-modern">
+                            <h4 class="timeline-title-modern">Secondary (Std 10)</h4>
+                            <div class="timeline-date-pill">2019 &ndash; 2021</div>
+                            <p class="timeline-institution">Shri K.K. Gothi High School</p>
+                            <div class="timeline-score-badge">
+                                <i class="fas fa-chart-line"></i>
+                                <span>Percentage: <strong>72.83%</strong></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2 class="section-title">Key <span>Projects</span></h2>
+        <div class="projects-grid">
+            
+            <!-- Project 1: PRAXES 2K26 -->
+            <div class="project-card glass-card">
+                <div class="project-card-top">
+                    <div class="project-badge-wrap">
+                        <span class="project-badge"><i class="fas fa-bolt"></i> Serverless SPA</span>
+                        <span class="project-live-indicator"><span class="live-dot"></span> Live</span>
+                    </div>
+                    <div class="project-title-header">
+                        <div class="project-icon-box">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <div>
+                            <h3 class="project-title">PRAXES 2K26 Portal</h3>
+                            <p class="project-tagline">College Festival Registration & Pass Engine</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-tech-tags">
+                    <span class="tech-tag"><i class="fab fa-react"></i> React 19</span>
+                    <span class="tech-tag"><i class="fas fa-bolt"></i> Vite</span>
+                    <span class="tech-tag"><i class="fas fa-wand-magic-sparkles"></i> Framer Motion</span>
+                    <span class="tech-tag"><i class="fas fa-cloud"></i> Google Apps Script</span>
+                    <span class="tech-tag"><i class="fas fa-file-pdf"></i> html2pdf.js</span>
+                    <span class="tech-tag"><i class="fas fa-server"></i> Vercel</span>
+                </div>
+
+                <p class="project-overview">
+                    Serverless, high-performance Single Page Application (SPA) designed to manage event discovery and multi-team registrations for a college-wide technical festival, entirely eliminating traditional backend hosting costs.
+                </p>
+
+                <div class="project-highlights">
+                    <h4 class="highlights-heading"><i class="fas fa-microchip"></i> Key Engineering Highlights</h4>
+                    <ul class="project-features-list">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div><strong>Dynamic Registration Engine:</strong> Multi-step team registration with dynamic form validation algorithms and conditional step-bypassing (e.g. auto-bypassing fees for host college).</div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div><strong>Serverless Backend Integration:</strong> Custom Google Apps Script webhook securely flattening multi-participant JSON payloads into real-time Google Sheets entries.</div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div><strong>Client-Side PDF Ticket Generation:</strong> Instant dynamic generation and rendering of personalized downloadable PDF participation tickets using <code>html2pdf.js</code>.</div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div><strong>Framer Motion UX:</strong> Fluid page transitions, animated progress indicators, and custom curtain-reveal intro animations.</div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div><strong>Admin Dashboard:</strong> LocalStorage state management and mock CRUD operations for event schedules, rules, pricing, and role-based access.</div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="project-actions">
+                    <a href="https://github.com/shubhampatel1573/praxes" target="_blank" class="btn-project btn-project-secondary">
+                        <i class="fab fa-github"></i> GitHub Code
+                    </a>
+                    <a href="https://praxes.vercel.app/" target="_blank" class="btn-project btn-project-primary">
+                        <i class="fas fa-external-link-alt"></i> Live Demo
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 2: Stationery Shop Management App -->
+            <div class="project-card glass-card">
+                <div class="project-card-top">
+                    <div class="project-badge-wrap">
+                        <span class="project-badge"><i class="fas fa-mobile-screen"></i> Cross-Platform POS & ERP</span>
+                        <span class="project-live-indicator"><span class="live-dot-blue"></span> Offline-First</span>
+                    </div>
+                    <div class="project-title-header">
+                        <div class="project-icon-box">
+                            <i class="fas fa-cash-register"></i>
+                        </div>
+                        <div>
+                            <h3 class="project-title">Stationery Shop POS</h3>
+                            <p class="project-tagline">Retail Billing, Inventory & Barcode App</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-tech-tags">
+                    <span class="tech-tag"><i class="fas fa-cube"></i> Ionic 8</span>
+                    <span class="tech-tag"><i class="fab fa-angular"></i> Angular 20</span>
+                    <span class="tech-tag"><i class="fas fa-mobile"></i> Capacitor 8</span>
+                    <span class="tech-tag"><i class="fas fa-database"></i> SQLite</span>
+                    <span class="tech-tag"><i class="fab fa-node-js"></i> Node.js / Express</span>
+                    <span class="tech-tag"><i class="fas fa-server"></i> MySQL</span>
+                </div>
+
+                <p class="project-overview">
+                    Cross-platform web and Android application featuring a robust offline-first local cache and sync queue backed by SQLite to ensure continuous POS and retail billing operation when disconnected from the server.
+                </p>
+
+                <div class="project-highlights">
+                    <h4 class="highlights-heading"><i class="fas fa-microchip"></i> Key Engineering Highlights</h4>
+                    <ul class="project-features-list">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div><strong>Offline-First SQLite Architecture:</strong> Local SQLite cache with background sync queue guaranteeing zero billing downtime during network dropouts.</div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div><strong>MLKit Barcode/QR Scanning:</strong> Hardware camera scan-to-cart using <code>@capacitor-mlkit/barcode-scanning</code> on search & SKU forms with gallery fallback.</div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div><strong>Billing & Multi-Mode POS:</strong> Live cart calculations, per-line discounts (fixed amount or percentage), directly editable quantities, and payment flows (Paid, Pending, Partial).</div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div><strong>Multi-Payment & Cheque Tracking:</strong> Supports Cash, UPI, and Cheque with dedicated cheque number tracking and payment status tracking.</div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div><strong>Smart Inventory & Sales Analytics:</strong> Real-time CRUD with low-stock warning badges, SKU lookup, godown location matching, PDF invoice generation, and 7/30-day sales analytics.</div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="project-actions">
+                    <a href="https://github.com/PRATHAM20058/stationaty_frontend" target="_blank" class="btn-project btn-project-secondary">
+                        <i class="fab fa-github"></i> GitHub Code
+                    </a>
+                    <a href="Stationery_Shop_Management_System_Report.pdf" target="_blank" class="btn-project btn-project-primary">
+                        <i class="fas fa-file-pdf"></i> View Detailed Report
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 3: Netflix Clone -->
+            <div class="project-card glass-card">
+                <div class="project-card-top">
+                    <div class="project-badge-wrap">
+                        <span class="project-badge"><i class="fas fa-tv"></i> Frontend Clone</span>
+                        <span class="project-live-indicator"><span class="live-dot"></span> Responsive</span>
+                    </div>
+                    <div class="project-title-header">
+                        <div class="project-icon-box">
+                            <i class="fas fa-film"></i>
+                        </div>
+                        <div>
+                            <h3 class="project-title">Netflix UI/UX Clone</h3>
+                            <p class="project-tagline">Responsive Streaming Platform Frontend</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-tech-tags">
+                    <span class="tech-tag"><i class="fab fa-html5"></i> HTML5</span>
+                    <span class="tech-tag"><i class="fab fa-css3-alt"></i> CSS3</span>
+                    <span class="tech-tag"><i class="fas fa-columns"></i> CSS Grid & Flexbox</span>
+                    <span class="tech-tag"><i class="fas fa-mobile-alt"></i> Responsive Layout</span>
+                </div>
+
+                <p class="project-overview">
+                    High-fidelity, pixel-perfect frontend clone reproducing the complete UI/UX layout, hero billboard trailers, dynamic movie shelf cards, and responsive interactions of the Netflix streaming platform.
+                </p>
+
+                <div class="project-highlights">
+                    <h4 class="highlights-heading"><i class="fas fa-microchip"></i> Key Engineering Highlights</h4>
+                    <ul class="project-features-list">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div><strong>Pixel-Perfect Streaming UI:</strong> Exact visual replica of hero billboard trailer section, tiered subscription plans, and dynamic content shelves.</div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div><strong>Fluid Responsive Architecture:</strong> Pure CSS3 Flexbox and CSS Grid layout with custom CSS variables, optimized for seamless viewing on mobile, tablet, and desktop.</div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div><strong>Interactive Micro-Animations:</strong> Smooth hover zoom transitions on media cards, animated navbar state changes on scroll, and accessible FAQ accordion.</div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="project-actions">
+                    <a href="https://github.com/PRATHAM20058/Netflix_Frontend.git" target="_blank" class="btn-project btn-project-secondary">
+                        <i class="fab fa-github"></i> GitHub Code
+                    </a>
+                    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7311700921493737473/" target="_blank" class="btn-project btn-project-primary">
+                        <i class="fas fa-video"></i> Demo Video
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="certifications" class="section">
+        <h2 class="section-title"><span>Certifications</span></h2>
+        <div class="cert-grid">
+            <a href="https://tryhackme.com/certificate/THM-MJT6UDMOJW" target="_blank" class="cert-link-wrapper">
+                <div class="cert-card glass-card">
+                    <img src="cert2.jpg" alt="TryHackMe" class="cert-preview">
+                    <div class="cert-overlay">
+                        <h3>Pre-Security Path</h3>
+                        <p>TryHackMe</p>
+                        <i class="fas fa-external-link-alt"></i>
+                    </div>
+                </div>
+            </a>
+            <a href="https://www.credly.com/badges/f4b086a0-3c6d-461d-ae92-302ea6c2b990/public_url" target="_blank" class="cert-link-wrapper">
+                <div class="cert-card glass-card">
+                    <img src="cert3.jpg" alt="Cisco" class="cert-preview">
+                    <div class="cert-overlay">
+                        <h3>Intro to Cybersecurity</h3>
+                        <p>Cisco</p>
+                        <i class="fas fa-external-link-alt"></i>
+                    </div>
+                </div>
+            </a>
+            <a href="https://archive.nptel.ac.in/content/noc/NOC25/SEM2/Ecertificates/106/noc25-cs142/Course/NPTEL25CS142S105060083310707313.pdf" target="_blank" class="cert-link-wrapper">
+                <div class="cert-card glass-card">
+                    <img src="cert4.jpg" alt="NPTEL" class="cert-preview">
+                    <div class="cert-overlay">
+                        <h3>Ethical Hacking (Elite)</h3>
+                        <p>NPTEL — IIT Kharagpur</p>
+                        <i class="fas fa-external-link-alt"></i>
+                    </div>
+                </div>
+            </a>
+            <a href="https://cybersecurityskills.in/training/mod/customcert/verify_certificate.php?code=stsCkxolci&qrcode=1" target="_blank" class="cert-link-wrapper">
+                <div class="cert-card glass-card">
+                    <img src="cert1.jpg" alt="C-DAC" class="cert-preview">
+                    <div class="cert-overlay">
+                        <h3>ML for Cyber Security</h3>
+                        <p>C-DAC & FutureSkills</p>
+                        <i class="fas fa-external-link-alt"></i>
+                    </div>
+                </div>
+            </a>
+            <a href="https://drive.google.com/file/d/1vmRZ_kkvx_NcMAQRA5ZFiT-ZYJz7ZuzD/view?usp=sharing" target="_blank" class="cert-link-wrapper">
+                <div class="cert-card glass-card">
+                    <img src="cert5.png" alt="Star Certification" class="cert-preview">
+                    <div class="cert-overlay">
+                        <h3>Star Cyber Secure (SCSE)</h3>
+                        <p>IANT & Star Certification</p>
+                        <i class="fas fa-external-link-alt"></i>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <h2>Get In Touch</h2>
+            <p>5, Nilkamal Society, Becharpura, Palanpur, 385001, Gujarat, India</p>
+            <p>Phone: +91 9427512951 | Email: <a href="mailto:parmarpratham44@gmail.com">parmarpratham44@gmail.com</a></p>
+            <div class="social-icons footer-social">
+                <a href="https://www.linkedin.com/in/gj-cp-gecpl-2027-027-pratham/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/PRATHAM20058/" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://tryhackme.com/p/parmarpratham44" target="_blank"><i class="fas fa-shield-alt"></i></a>
+            </div>
+            <p class="copyright">&copy; 2026 Pratham Parmar. Built with modern web technologies.</p>
+        </div>
+    </footer>
+
+    <!-- Custom Cyber Cursor -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-outline" id="cursorOutline"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="script.js?v=4.0"></script>
+</body>
+</html>
